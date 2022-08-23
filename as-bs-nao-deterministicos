@@ -25,3 +25,5 @@ w2: b>w2,w4
 w2: a>w4
 w4: b>w4,w5
 w4: a>w4
+w5: a>w5
+w5: b>w5

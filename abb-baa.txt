@@ -1,0 +1,33 @@
+Considere o alfabeto {a, b} e escreva um autômato finito determinístico que reconhece as palavras que começam com a e terminam com dois b's (bb) ou começa com b e termina com dois a's (aa).
+
+#states
+w0
+w1
+w2
+w3
+w4
+w5
+w6
+#initial
+w0
+#accepting
+w5
+w6
+#alphabet
+a
+b
+#transitions
+w0: a>w1
+w0: b>w2
+w1: a>w1
+w1: b>w3
+w2: b>w2
+w2: a>w4
+w3: a>w1
+w3: b>w5
+w5: a>w1
+w5: b>w5
+w4: a>w6
+w4: b>w2
+w6: a>w6
+w6: b>w2

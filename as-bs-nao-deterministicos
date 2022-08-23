@@ -1,0 +1,27 @@
+Considere o alfabeto {a, b} e escreva um autômato finito não-determinístico que reconhece palavras que a letra inicial apareça duas vezes depois desta ocorrência.
+
+#states
+w0
+w1
+w2
+w3
+w4
+w5
+#initial
+w0
+#accepting
+w5
+#alphabet
+a
+b
+#transitions
+w0: a>w1
+w0: b>w2
+w1: a>w1,w3
+w1: b>w1
+w3: a>w3,w5
+w3: b>w3
+w2: b>w2,w4
+w2: a>w4
+w4: b>w4,w5
+w4: a>w4
